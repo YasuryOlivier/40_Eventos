@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TodoApp</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<header>
+				<div class="row">
+					<div class="col-md-12 bg-gray" >
+						<h1 class="text-center">TODO APP</h1>
+					</div>
+				</div>
+		</header>
+		<section>
+			<div class="row">
+				<div class="col-md-12 text-center abajo">
+					<textarea class="form-control" id="escribirTarea" placeholder="Escribe tu tarea"></textarea><!--escribe la tarea, tengo que mandar a llamar con un id-->
+				</div>
+				<div class="col-md-12">
+					<div class="text-center abajo">
+						<button class="btn btn-primary" id="sumaTarea"> + Agregar </button><!--este botón va a sumar cada una de las tareas que el usuario escriba-->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<pre class="pre-scrollable abajo">
+						<ul id="lista">
+						</ul>
+					</pre>
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</div>
+</body>
+</html>
